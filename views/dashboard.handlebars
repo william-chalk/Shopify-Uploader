@@ -27,16 +27,25 @@
         </div>
     </div>
 
+
     <div class="col-3 card">
-        <h1 class="card-header">Status</h1>
+        <h1 class="card-header">Tags</h1>
         <div class="card-body">
-        <input type="radio" id="active" name="status" value="active"/>
-        <label for="active">Active</label>
-        <input type="radio" id="draft" name="status" value="draft"/>
-        <label for="draft">Draft</label>
+            <div id="tagList" class="tagDropdown" tabindex="100">
+                <span class="anchor">Select Tags</span>
+                <ul class="items">
+                    <li><input type="checkbox"/>Tee</li>
+                    <li><input type="checkbox"/>Tee</li>
+                    <li><input type="checkbox"/>Tee</li>
+                    <li><input type="checkbox"/>Tee</li>
+                    <li><input type="checkbox"/>Tee</li>
+                    <li><input type="checkbox"/>Tee</li>
+                    <li><input type="checkbox"/>Tee</li>
+                </ul>
+            </div>
         </div>
     </div>
-
+    
     <div class="col-3 card">
         <h1 class="card-header">Style</h1>
         <div class="card-body">
@@ -56,6 +65,16 @@
     </div>
 
     <div class="col-3 card">
+        <h1 class="card-header">Status</h1>
+        <div class="card-body">
+        <input type="radio" id="active" name="status" value="active"/>
+        <label for="active">Active</label>
+        <input type="radio" id="draft" name="status" value="draft"/>
+        <label for="draft">Draft</label>
+        </div>
+    </div>
+
+    <div class="col-3 card">
         <h1 class="card-header">Publish</h1>
         <div class="card-body">
             <input type="radio" id="yes" name="publish" value="yes"/>
@@ -67,3 +86,4 @@
 
 <button type="submit">Submit</button>
 </div>
+<script src="javascript/script.js"></script>
