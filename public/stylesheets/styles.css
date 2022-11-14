@@ -1,5 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
+.template-input{
+  margin-left: 15vw;
+  margin-top: 20vh;
+}
 
 .tagDropdown {
     display: inline-block;

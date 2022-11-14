@@ -1,4 +1,4 @@
-<div class="container">
+<div class="template-input row container">
     <div class="col-4 card">
         <h1 class="card-header">Template Name</h1>
         <div class="card-body">
@@ -6,10 +6,10 @@
         </div>
     </div>
 
-    <div class="col-6 card">
+    <div class="col-8 card">
         <h1 class="card-header">Description</h1>
         <div class="card-body">
-            <textarea>Drop Description Here</textarea>
+            <textarea id="template-description">Drop Description Here</textarea>
         </div>
     </div>
 
@@ -34,13 +34,22 @@
             <div id="tagList" class="tagDropdown" tabindex="100">
                 <span class="anchor">Select Tags</span>
                 <ul class="items">
-                    <li><input type="checkbox"/>Tee</li>
-                    <li><input type="checkbox"/>Tee</li>
-                    <li><input type="checkbox"/>Tee</li>
-                    <li><input type="checkbox"/>Tee</li>
-                    <li><input type="checkbox"/>Tee</li>
-                    <li><input type="checkbox"/>Tee</li>
-                    <li><input type="checkbox"/>Tee</li>
+                    <li><input value="BFCM" class="tags" type="checkbox"/>BFCM</li>
+                    <li><input value="Christmas" class="tags" type="checkbox"/>Christmas</li>
+                    <li><input value="Men's" class="tags" type="checkbox"/>Men's</li>
+                    <li><input value="Women's" class="tags" type="checkbox"/>Women's</li>
+                    <li><input value="$20 Special" class="tags" type="checkbox"/>$20 Special</li>
+                    <li><input value="Hat" class="tags" type="checkbox"/>Hat</li>
+                    <li><input value="Polo" class="tags" type="checkbox"/>Polo</li>
+                    <li><input value="Save America" class="tags" type="checkbox"/>Save America</li>
+                    <li><input value="THURSDAY" class="tags" type="checkbox"/>THURSDAY</li>
+                    <li><input value="United We Stand Special" class="tags" type="checkbox"/>United We Stand Special</li>
+                    <li><input value="WEDNESDAY" class="tags" type="checkbox"/>WEDNESDAY</li>
+                    <li><input value="H&F" class="tags" type="checkbox"/>H&F</li>
+                    <li><input value="Hunting & Fishing" class="tags" type="checkbox"/>Hunting & Fishing</li>
+                    <li><input value="Proud" class="tags" type="checkbox"/>Proud</li>
+                    <li><input value="LGBTQ" class="tags" type="checkbox"/>LGBTQ</li>
+                    <li><input value="USA Tee" class="tags" type="checkbox"/>USA Tee</li>
                 </ul>
             </div>
         </div>
@@ -84,6 +93,6 @@
         </div>
     </div>
 
-<button type="submit">Submit</button>
+<button id="submit-btn" type="submit">Submit</button>
 </div>
 <script src="javascript/script.js"></script>
