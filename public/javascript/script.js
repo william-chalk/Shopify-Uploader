@@ -25,21 +25,14 @@ function submitInfo(event){
   const templateDescripton = document.querySelector("#template-description").value;
   const templateWeight = document.querySelector("#weight").value;
   const templateCost = document.querySelector("#cost").value;
-  const templateTags = document.querySelector(".tags").value;
-  const checkedTags = [];
-    for(let i =0;i<templateTags.length;i++){
-      if(templateTags[i].checked){
-        checkedTags.push(templateTags[i].value);
-      }
-    }
-
+  const templateTags = document.querySelector("input[class='tags']:checked").value;
   const templateStyle = document.querySelector("#style").value;
-  const templateStatus = document.querySelector("input[name='status']:checked").value;
+  const templateStatus = document.querySelector("input[name='status']").value;
   const templatePublish = document.querySelector("input[name=publish]").value;
 
-  const test = templateName + templateDescripton + templateWeight + templateCost + templateTags + templateStyle + templateStatus + templatePublish;
+  const test = `${templateName}  ${templateDescripton}  ${templateWeight}  ${templateCost}  ${templateTags}  ${templateStyle}  ${templateStatus}  ${templatePublish}`;
 
-  console.log(test);
+  console.log(JSON.stringify(test));
 
 }
 
