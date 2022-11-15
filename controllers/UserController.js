@@ -17,7 +17,7 @@ module.exports = {
       delete user.password;
 
       req.session.save(() => {
-        req.session.auth = true;
+        req.session.withAuth = true;
         req.session.currentUser = user;
         res.status(200).json(user);
       });
@@ -56,7 +56,7 @@ module.exports = {
       delete user.password;
 
       req.session.save(() => {
-        req.session.auth = true;
+        req.session.withAuth = true;
         req.session.currentUser = user;
         res.status(200).json({ user, message: "You are now logged in!" });
       });
@@ -67,7 +67,7 @@ module.exports = {
   },
 
   logout: (req, res) => {
-    if (req.session.auth) {
+    if (req.session.withAuth) {
       req.session.destroy(() => {
         res.status(204).end();
       });

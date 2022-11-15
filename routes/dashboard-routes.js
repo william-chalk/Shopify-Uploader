@@ -6,7 +6,7 @@ const auth = require('../middleware/auth');
 
 router.get('/', (req, res) => {
   console.log('======================');
-    res.render('dashboard');
+    res.render('create-template');
 });
 
 

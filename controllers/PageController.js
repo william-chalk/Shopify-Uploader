@@ -4,7 +4,7 @@ module.exports = {
         'dashboard',
         {
           welcomeMessage: `Welcome to the dashboard ${req.session.currentUser.firstName}!`,
-          isAuthenticated: req.session.auth
+          withAuth: req.session.withAuth
         }
       );
     }

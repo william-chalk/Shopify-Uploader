@@ -5,8 +5,8 @@
 }
 
 .template-input{
-  margin-left: 15vw;
-  margin-top: 20vh;
+  margin-top: 5vh;
+  margin-left: 10vw;
 }
 
 .tagDropdown {
@@ -60,3 +60,23 @@
   .tagDropdown.visible .items {
     display: block;
   }
+
+  #template-description{
+    padding-right: 60%;
+    padding-bottom: 20%;
+  }
+
+  #template-name{
+    padding-right: 80%;
+  }
+
+  .temp-name{
+    margin-bottom: 15px;
+  }
+
+  .card h1{
+    font-size: 20px;
+  }
+
+
+ 
